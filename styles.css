@@ -175,6 +175,7 @@ h2 {
     }
     .logo {
         padding: 10vh 0 0 10px;
+        font-size: 0.75rem;
     }
     footer {
         text-align: center;
