@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+    color: #666;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("images/tlo2.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+img.image {
+    max-width: 100%;
+}
+
+.logo {
+    padding: 20% 0 0 10%;
+}
+
+.logo a {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+header>a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: rgba(153, 152, 152, 0.377);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav li {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-right: rgba(245, 248, 250, 0.486) 1px solid;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.navbar-nav li:hover {
+    background-color: rgba(245, 248, 250, 0.486);
+}
+
+.navbar-nav li:last-child {
+    border-right: none;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+article.center {
+    justify-content: center;
+}
+
+article.our-projects {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0 5vw 10vw;
+}
+
+.white {
+    background-color: white;
+}
+
+.half {
+    display: flex;
+    width: 50vw;
+    padding: 3vw 5vw 4vw;
+}
+
+.left {
+    justify-content: center;
+    padding-right: 0;
+}
+
+.right {
+    justify-content: center;
+}
+
+h2 {
+    line-height: 1.5rem;
+    font-size: 1.75em;
+    color: #484848;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.descripiton>p {
+    margin: 0 0 2em 0;
+    font-size: 100%;
+}
+
+.carousel {
+    width: 90%;
+    height: 90%;
+    max-width: 1000px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    .half {
+        width: 100%;
+        padding: 5% 10%;
+    }
+    .carousel {
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        padding: 10vh 0 0 10px;
+    }
+    footer {
+        text-align: center;
+    }
+    .info {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    footer a {
+        margin-left: 0 !important;
+    }
+    footer span {
+        display: block;
+        border-top: 1px solid white;
+        padding-top: 5px;
+    }
+    .mails {
+        margin-top: 20px;
+    }
+}
+
+footer {
+    margin: auto;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    font-weight: 700;
+    color: black;
+    margin-left: 15px;
+}
+
+.title {
+    text-align: center;
+}
