@@ -23,6 +23,29 @@ img.image {
 
 .logo {
     padding: 20% 0 0 10%;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.logo p {
+    opacity: 0;
+}
+
+.trans-1 {
+    transition: 1s;
+}
+
+.trans-2 {
+    transition: 2s;
+}
+
+.trans-3 {
+    transition: 3s;
+}
+
+.trans-4 {
+    transition: 4s;
 }
 
 .logo a {
