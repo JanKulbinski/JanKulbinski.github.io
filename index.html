@@ -313,10 +313,13 @@
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
     <script type="text/javascript">
         $(function() {
-            $(".feature").css({
-                opacity: "1",
-                transform: "translateY(40px)"
-            })
+            setTimeout(function() {
+                $(".feature").css({
+                    opacity: "1",
+                    transform: "translateY(40px)"
+                })
+            }, 500);
+
         });
     </script>
 </body>
