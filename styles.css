@@ -195,6 +195,9 @@ h2 {
     .mails {
         margin-top: 20px;
     }
+    .logo p {
+        display: none;
+    }
 }
 
 footer {
