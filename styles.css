@@ -100,15 +100,17 @@ article.our-projects {
     display: flex;
     width: 50vw;
     padding: 3vw 5vw 4vw;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    margin-top: 10%;
 }
 
 .left {
-    justify-content: center;
     padding-right: 0;
-}
-
-.right {
-    justify-content: center;
 }
 
 h2 {
