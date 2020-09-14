@@ -11,7 +11,36 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
 
+        fbq('init', '1659273074239514');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=1659273074239514&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -24,7 +53,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about">O NAS</a>
+                        <a id="about-us" class="nav-link" href="#about">O NAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#foto">FOTOWOLTAIKA</a>
@@ -51,7 +80,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="description">
         <article>
             <div class="half left">
                 <h2>
@@ -353,7 +382,7 @@
             <div class="half left">
                 <div class="adress">
                     <p>RGK S.C. R.Guz, D.Batorowicz </p>
-                    <p>ul.Pawica 26 </p>
+                    <p>ul.Pawia 26 </p>
                     <p>52-235 Wrocław</p>
                     <p> NIP: 8992755383</p>
                 </div>
@@ -380,12 +409,21 @@
 
     <script type="text/javascript">
         $(function() {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+                $("#about-us").attr("href", "#description");
+                $("#about").attr("href", "#description");
+
+                $(".navbar-toggler").click(function() {
+                    $(".logo p").toggle()
+                });
+            }
+
             setTimeout(function() {
                 $(".feature").css({
                     opacity: "1",
                     transform: "translateY(40px)"
                 })
-            }, 500);
+            }, 800);
 
         });
     </script>
